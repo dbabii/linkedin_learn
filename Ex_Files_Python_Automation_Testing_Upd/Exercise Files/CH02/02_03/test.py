@@ -5,8 +5,12 @@ from selenium.webdriver.common.by import By
 driver = webdriver.Chrome()
 # open URL
 driver.get("file:///home/grom/git/linkedin_learn/Ex_Files_Python_Automation_Testing_Upd/Exercise%20Files/CH02/html_code_02.html")
-# find a login form on the page
+# find a login form on the page by ID
 login_form = driver.find_element(By.ID, "loginForm")
+# find an username on the page by name
+username = driver.find_element(By.NAME, "username")
 # print the information into console
 print("My login form element is:", login_form)
+# print the output from the user
+print("Username:", username)
 driver.close()
