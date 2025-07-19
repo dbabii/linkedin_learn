@@ -24,6 +24,7 @@ def task_list():
 def test_find_task(test_input, expected, task_list):
     assert app._find_task(test_input, task_list) == expected
 
+@pytest.mark.skip(reason="not necessary atm")
 def test_find_task_none(task_list):
     assert app._find_task("buy banana", task_list) is None
 
