@@ -17,7 +17,7 @@ input_id = driver.find_element(By.ID, 'searchinput')
 dropidXpath = '//*[@id="sidebar"]/div[3]/ul/li[5]/form/div/select'
 send_text = 'Beginner'
 
-input_id.clear()
+input_id.clear()Q
 input_id.send_keys(send_text)
 #input_id.submit()
 # other solution
